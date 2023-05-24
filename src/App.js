@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/header/Header';
+import Todo from './components/todo/Todo';
+import Form from './components/form/Form';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+        // input의 갯수가 늘어날때마다 state와 handler가 같이 증가한다.
+    // const [title, setTitle] = useState("");
+    // const [description,setDescription] = useState("");
+    // const onChangeTitleHandler = (event) => {
+    //     setTitle(event.target.value);
+    //   };
+    // const onChangeDescriptionHandler =(event) => {
+    //     setDescription(event.target.value);
+    // };  
+    
+    
+
+   return(
+     <>
+        <Header />
+        <Todo />
+        <Form />  
+     </>
+       
+   )}
+ 
 
 export default App;
